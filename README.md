@@ -7,7 +7,7 @@
 - Reusable headers in `include/` expose the supporting structures (`FastLCP`, `lf_gbwt::GBWT`, `CompText`, and query helpers) for integration in other tools.
 - Toy panels and pre-built indexes under `toyData/` enable quick experimentation.
 
-## Quick Start
+## Start
 ```bash
 # install sdsl-lite and gbwt one directory above the repos
 git clone https://github.com/vgteam/sdsl-lite
@@ -21,7 +21,7 @@ make ibdCaller
 ```
 For production runs keep the generated `*.fastlocate`, `*.fastlcp`, `*.lfgbwt`, and `*.comptext` files on disk to avoid rebuilding.
 
-## Key Files
+### Files
 - `include/fast_lcp.h`, `include/lf_gbwt.h`, `include/compText.h`: succinct indexes layered over a GBWT.
 - `include/querySupport.h`, `include/setMaximalMatchQuery.h`, `include/longMatchQuery.h`: long and set-maximal match implementations used by `ibdCaller`.
 - `test/ibdCaller.cpp`: command-line driver for IBD discovery.
