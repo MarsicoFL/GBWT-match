@@ -15,7 +15,7 @@ git clone https://github.com/jltsiren/gbwt
 cd sdsl-lite && ./install.sh .. && cd ../gbwt && ./install.sh ..
 
 # build and run the caller on a toy GBWT
-cd ../GBWT-Query/test
+cd ../GBWT-match/test
 make ibdCaller
 ./ibdCaller ../toyData/indexes/bi_fig1/bi_fig1 4 --version 4 --output bi_fig1_ibd.tsv --verbose
 ```
